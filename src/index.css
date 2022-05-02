@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body{
+  margin: 0%;
+  color: white;
+}
+
+.navBar{
+  z-index: 5;
+  position: absolute;
+  top: 0; 
+  margin-top: 20px;
+  width: 100%; 
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.navBar-menu{
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-left: auto;
+}
+
+.navBar-link, .navBar-link-active{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  text-decoration: none;
+  color: white;
+  margin: 0 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  word-spacing: 20px;
+  border-bottom: 3px solid transparent;
+}
+
+.logo{
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+}
+
+.nav-break, .des-break, .crew-break{
+  color: #979797;
+  width: 350px;
+  height: 1px;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  margin-left: 40px;
+}
+
+
+
+@media screen and (max-width:830px){
+  .navBar{
+    margin: 0;
+  }
+
+  .navBar-menu{
+    width: 525px;
+  }
+
+  .navBar-link, .navBar-link-active{
+    margin: 0 20px;
+  }
+
+  .nav-break{
+    display: none;
+  }
+
+  .logo{
+    margin: 10px 0 0 20px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .toggle-nav, .toggle-nav-active{
+    background: url("./assets/shared/icon-hamburger.svg");
+    width: 20px;
+    height: 21px;
+    margin-right: 20px;
+    z-index: 5;
+    position: fixed;
+    right: 0;
+  }
+
+  .toggle-nav-active{
+    background: url("./assets/shared/icon-close.svg");
+  }
+
+  .nav-open, .nav-open-active{
+    display: none;
+    height: 100vh;
+    width: 60%;
+    right: 0;
+    top: 0;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.01);
+  }
+
+  .nav-open-active{
+    display: block;
+  }
+
+  .navBar-menu{
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 2;
+  }
+
+  .navBar-link, .navBar-link-active{
+    width: 100%;
+  }
 }
