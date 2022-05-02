@@ -36,7 +36,7 @@ function App() {
           <Route path="/crew" element={<Crew/>}/>
           <Route path="/technology" element={<Technology/>}/>
       </Routes>
-    </Router>
+    </Router> 
   )
 }
 
