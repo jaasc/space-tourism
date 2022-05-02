@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="navBar">
         <img className="logo" src={logo} alt="logo"/>
         <hr className="nav-break"></hr>
