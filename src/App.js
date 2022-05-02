@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="navBar">
         <img className="logo" src={logo} alt="logo"/>
         <hr className="nav-break"></hr>
@@ -31,7 +31,7 @@ function App() {
         </div>
       </div>
       <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route exact path="/" element={<Home/>}/>
           <Route path="/destination" element={<Destination/>}/>
           <Route path="/crew" element={<Crew/>}/>
           <Route path="/technology" element={<Technology/>}/>
