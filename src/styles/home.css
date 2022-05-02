@@ -1,0 +1,133 @@
+.homeContainer{
+    background: url("../assets/home/background-home-desktop.jpg") no-repeat center center fixed; 
+  }
+  
+  .homeContainer, .crewContainer, .desContainer, .techContainer{
+    position: absolute;
+    top:0; right: 0; bottom: 0; left: 0;
+    z-index: 1;
+    padding: 80px 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .home-explore, .home-title, 
+    .des-planets, .des-tabs{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .home-title{
+    padding: 0 15% 70px;
+  }
+  
+  .home-title h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 4.725px;
+    margin-top: auto;
+    color: #D0D6F9;
+  }
+  
+  .home-title h1{
+    font-family: 'Bellefair', serif;
+    color: white;
+    margin: 20px 0;
+    font-size: 120px;
+    font-weight: normal;
+  }
+  
+  .home-title p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    width: 400px;
+    color: #D0D6F9;
+    line-height: 28px;
+    text-align: justify;
+  }
+  
+  .circle {
+    width: 225px;
+    height: 225px;
+    line-height: 225px;
+    border-radius: 50%;
+    font-size: 32px;
+    color: #0B0D17;
+    text-align: center;
+    background: white;
+    font-family: 'Bellefair', serif;
+    margin: auto auto 80px;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .circle:hover{
+    box-shadow: 0px 0px 0px 50px rgba(255,255,255,.1);     
+  }
+  
+  
+  @media screen and (max-width:850px){
+    .homeContainer{
+      background: url("../assets/home/background-home-tablet.jpg") no-repeat center center fixed; 
+      background-size: cover;
+      overflow: auto;
+    }
+
+    .homeContainer, .desContainer{
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home-title, .home-explore{
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+    }
+
+    .home-title h2{
+      margin: 20px 0 0;
+    }
+
+    .home-title h1{
+      margin: 5px 0;
+      font-size: 100px;
+    }
+
+    .home-title p{
+      line-height: 26px;
+      text-align: center;
+    }
+
+    .circle{
+      margin: 20px;
+      width: 175px;
+      height: 175px;
+      line-height: 175px;
+    }
+  }
+
+  @media screen and (max-width:420px){
+    .homeContainer{
+      background: url("../assets/home/background-home-mobile.jpg") no-repeat center center fixed; 
+      background-size: cover;
+      overflow: auto;
+    }
+
+    .home-title h2{
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .home-title h1{
+      font-size: 80px;
+      margin: 30px 0;
+    }
+
+    .home-title p{
+      width: 350px;
+    }
+  }
+

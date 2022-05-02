@@ -1,0 +1,178 @@
+.desContainer{
+    background: url("../assets/destination/background-destination-desktop.jpg") no-repeat center center fixed; 
+  }
+
+  .des-title, .crew-title, .tech-title{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+  }
+
+  .des-title{
+    margin: 22px 5%;
+  }
+  
+  .des-title h3, .des-title h2,
+  .crew-title h3, .crew-title h2,
+  .tech-title h3, .tech-title h2{
+    font-size: 28px;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  
+  .des-title h2, .crew-title h2, .tech-title h2 {
+    font-weight: normal;
+    margin-left: 10px;
+  }
+  
+  .des-title h3, .crew-title h3, .tech-title h3{
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    letter-spacing: 4.5px;
+  }
+
+  .des-planets img{
+    max-width: 300px;
+    max-height: 300px;
+    margin: auto;
+  }
+
+  .des-tabs{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab{
+    width: 400px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tablinks, .tablinks-active{
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    border: none;
+    color: white;
+    margin-right: 10px;
+    text-align: left;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .navBar-link-active, .tablinks-active{
+    border-bottom: 3px solid white;
+  }
+  
+  .tablinks:hover, .navBar-link:hover{
+    border-bottom: 3px solid rgb(255, 255, 255, .3);
+  }
+
+  .tabcontent, .slide-Cont, .tech-cont{
+    display: none;
+  }
+  
+  .tab-name{
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase; 
+    font-size: 80px;
+    font-weight: normal;
+    margin: 20px 0;
+  }
+  
+  .tab-des{
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 178%;
+    width: 400px;
+    text-align: justify;
+  }
+
+  .des-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+  }
+  
+  .desNo h4{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase; 
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #D0D6F9;
+    margin-bottom: 10px;
+  }
+  
+  .desNo h3{
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase; 
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .des-break{
+    width: 400px;
+    margin: 20px 0;
+  }
+
+  @media screen and (max-width:850px){
+    .desContainer{
+        background: url("../assets/destination/background-destination-tablet.jpg") no-repeat center center fixed; 
+        background-size: cover;
+        overflow: auto;
+      }
+
+      .des-planets{
+        padding: 0;
+      }
+
+      .des-title{
+        margin: 0;
+      }
+
+      .des-info, .tab-name{
+        text-align: center;
+      }
+
+      .tab{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .des-planets img{
+        width: 250px;
+      }
+
+      .des-title h3{
+        margin-left: 30px;
+      }
+  }
+
+  @media screen and (max-width:420px){
+    .desContainer{
+      background: url("../assets/destination/background-destination-mobile.jpg") no-repeat center center fixed; 
+      background-size: cover;
+      overflow: auto;
+    }
+  
+    .tab-des{
+      width: 100%;
+    }
+
+    .des-break{
+      width: 300px;
+    }
+
+    .des-title h3{
+      margin: 0;
+    }
+  }
+  
