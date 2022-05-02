@@ -4,7 +4,7 @@ import Crew from "./components/Crew"
 import Destination from "./components/Destination"
 import Technology from "./components/Technology"
 import logo from "./assets/shared/logo.svg"
-import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom"
+import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom"
 
 function App() {
   const [open, setOpen] = useState(false)
@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="navBar">
         <img className="logo" src={logo} alt="logo"/>
         <hr className="nav-break"></hr>
